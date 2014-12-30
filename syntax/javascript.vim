@@ -60,7 +60,7 @@ if !exists("javascript_ignore_javaScriptdoc")
   " tags containing type and param
   syntax match  jsDocTags         contained "@\(arg\|argument\|param\|property\)\>" nextgroup=jsDocType skipwhite
   " tags containing type but no param
-  syntax match  jsDocTags         contained "@\(callback\|define\|enum\|external\|implements\|this\|type\|typedef\|return\|returns\)\>" nextgroup=jsDocTypeNoParam skipwhite
+  syntax match  jsDocTags         contained "@\(callback\|define\|external\|implements\|this\|type\|typedef\|return\|returns\)\>" nextgroup=jsDocTypeNoParam skipwhite
   " tags containing references
   syntax match  jsDocTags         contained "@\(lends\|see\|tutorial\)\>" nextgroup=jsDocSeeTag skipwhite
   " other tags (no extra syntax)
@@ -122,7 +122,7 @@ syntax keyword jsExceptions     Error EvalError InternalError RangeError Referen
 
 syntax keyword jsBuiltins       decodeURI decodeURIComponent encodeURI encodeURIComponent eval isFinite isNaN parseFloat parseInt uneval
 
-syntax keyword jsFutureKeys     abstract enum int short boolean interface static byte long super char final native synchronized float package throws goto private transient debugger implements protected volatile double public
+syntax keyword jsFutureKeys     abstract int short boolean interface static byte long super char final native synchronized float package throws goto private transient debugger implements protected volatile double public
 
 "" DOM/HTML/CSS specified things
 
